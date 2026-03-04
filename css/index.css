@@ -1,0 +1,821 @@
+/* Estilos específicos para la página de inicio */
+
+/* Sección de Reseñas de Google */
+.google-reviews {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  padding: 40px 20px;
+  margin: 40px 0;
+  border-radius: 20px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.google-reviews h2 {
+  font-size: 2em;
+  color: white;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 700;
+  background: linear-gradient(135deg, #ffd700, #ffed4a);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+.reviews-container {
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.reviews-container iframe {
+  width: 100%;
+  height: 400px;
+  border: none;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .google-reviews {
+    padding: 30px 15px;
+  }
+  
+  .google-reviews h2 {
+    font-size: 1.8em;
+  }
+  
+  .reviews-container iframe {
+    height: 300px;
+  }
+}
+
+/* Header */
+.site-header {
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    padding: 1rem 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-decoration: none;
+}
+
+.logo img {
+    height: 60px;
+    width: auto;
+}
+
+.title-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 1.8rem;
+    color: #003366;
+    margin: 0;
+    font-weight: 700;
+}
+
+.slogan {
+    font-size: 1rem;
+    color: #6c757d;
+    margin: 0.2rem 0 0;
+    font-style: italic;
+}
+
+/* Social Links */
+.social-links {
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+}
+
+.social-links a {
+    color: #003366;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #ffd700;
+}
+
+/* Mobile Menu Toggle */
+.mobile-menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #003366;
+    font-size: 1.5rem;
+}
+
+/* Main Navigation */
+.main-nav {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.main-nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 2rem;
+}
+
+.main-nav a {
+    color: #003366;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    padding: 0.5rem;
+}
+
+.main-nav a:hover {
+    color: #ffd700;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .mobile-menu-toggle {
+        display: block;
+    }
+    
+    .main-nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: white;
+        padding: 1rem;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    
+    .main-nav.active {
+        display: block;
+    }
+    
+    .main-nav ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .social-links {
+        display: none;
+    }
+    
+    .logo img {
+        height: 50px;
+    }
+}
+
+/* Sección de bienvenida */
+
+/* Sección de Promoción de App */
+.app-promotion {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    padding: 40px 20px;
+    margin: 40px 0;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.app-content {
+    flex: 1;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.app-content h2 {
+    font-size: 2em;
+    color: white;
+    margin-bottom: 15px;
+    font-weight: 700;
+    background: linear-gradient(135deg, #ffd700, #ffed4a);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+.app-content p {
+    font-size: 1.2em;
+    color: rgba(255,255,255,0.9);
+    margin-bottom: 20px;
+    font-weight: 500;
+    letter-spacing: 0.1px;
+}
+
+.app-button {
+    display: inline-block;
+    background: linear-gradient(135deg, #ffd700, #ffed4a);
+    color: #003366;
+    padding: 12px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(255,215,0,0.3);
+}
+
+.app-button:hover,
+.google-reviews {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    padding: 40px 20px;
+    margin: 40px 0;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.google-reviews .section-title {
+    font-size: 2em;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: 700;
+    background: linear-gradient(135deg, #ffd700, #ffed4a);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+.google-reviews-widget {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.google-reviews-widget iframe {
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    height: 400px;
+}
+
+@media (max-width: 768px) {
+    .google-reviews {
+        padding: 20px 10px;
+    }
+    
+    .google-reviews-widget iframe {
+        height: 300px;
+    }
+}
+
+.app-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(255,215,0,0.4);
+    background: linear-gradient(135deg, #ffed4a, #ffd700);
+}
+
+.app-image {
+    flex: 0.6;
+    max-width: 240px;
+    position: relative;
+    margin-left: 20px;
+}
+
+.app-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.app-image::before {
+    content: '10%';
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: linear-gradient(135deg, #ffd700, #ffed4a);
+    color: #003366;
+    font-size: 1.6em;
+    font-weight: 700;
+    padding: 8px 15px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(255,215,0,0.3);
+}
+
+/* Sección de bienvenida */
+.welcome-section {
+    background-color: #000000;
+    padding: 20px 15px;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.welcome-title {
+    font-size: 1.6em;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: white;
+    line-height: 1.2;
+    font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    letter-spacing: 0.3px;
+    text-shadow: 0.5px 0.5px 1.5px rgba(255,255,255,0.2);
+}
+
+.highlight-title {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    text-shadow: 0.5px 0.5px 1.5px rgba(255,255,255,0.2);
+}
+
+.highlight-description {
+    font-size: 1em;
+    color: rgba(255,255,255,0.9);
+    margin-top: 10px;
+    font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    letter-spacing: 0.2px;
+    line-height: 1.4;
+    padding: 0 20px;
+    text-shadow: 0 0.5px 1px rgba(255,255,255,0.1);
+}
+
+.welcome-title::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 2px;
+    margin: 10px auto;
+    background: linear-gradient(90deg, #ffd700, #ffed4a);
+    border-radius: 1px;
+    box-shadow: 0 1px 2px rgba(255,215,0,0.2);
+}
+
+/* Servicios destacados */
+.services-section {
+    background-color: #f8f9fa;
+    padding: 40px 20px;
+}
+
+.service-header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.service-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.services-highlight {
+    background: rgba(255,255,255,0.95);
+    padding: 40px;
+    border-radius: 15px;
+    margin: 0 30px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(255,215,0,0.2);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    backdrop-filter: blur(3px);
+}
+
+.highlight-title {
+    font-size: 2.2em;
+    color: #212529;
+    font-weight: 800;
+    letter-spacing: 0.6px;
+    line-height: 1.3;
+    font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+.highlight-title::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    width: 4px;
+    height: 50%;
+    background: linear-gradient(180deg, #ffd700, #ffed4a);
+    transform: translateY(-50%);
+    box-shadow: 0 2px 4px rgba(255,215,0,0.2);
+}
+
+.highlight-description {
+    font-size: 1.6em;
+    color: #212529;
+    margin-top: 20px;
+    font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    letter-spacing: 0.4px;
+    line-height: 1.4;
+    padding: 0 30px;
+    font-weight: 600;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.05);
+}
+
+/* Estilos para la garantía */
+.garantia {
+  background: #212529;
+  color: white;
+  padding: 30px 40px;
+  border-radius: 10px;
+  margin: 40px 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.garantia-icono {
+  font-size: 2.5em;
+  line-height: 1;
+  color: #007bff;
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.garantia-texto {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.garantia-numero {
+  font-size: 3.5em;
+  font-weight: 800;
+  color: #007bff;
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.garantia-unidad {
+  font-size: 2.2em;
+  font-weight: 600;
+  color: #6c757d;
+}
+
+.garantia-detalle {
+  font-size: 1.8em;
+  font-weight: 600;
+  color: white;
+  letter-spacing: 0.5px;
+}
+
+.garantia-compromiso {
+  font-size: 1.4em;
+  font-weight: 500;
+  color: #6c757d;
+  letter-spacing: 0.3px;
+  line-height: 1.4;
+}
+
+/* CTA (Call to Action) */
+.cta-section {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.cta-button {
+    background-color: #ffd700;
+    color: #003366;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #ffed4a;
+}
+
+/* Estilos para la página Nosotros */
+.nosotros-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.seccion {
+    margin-bottom: 40px;
+    padding: 20px;
+}
+
+.seccion h2 {
+    font-size: 2em;
+    color: #003366;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.seccion p {
+    font-size: 1.1em;
+    color: #333;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.valores {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.valores li {
+    margin-bottom: 15px;
+    font-size: 1.1em;
+    color: #333;
+}
+
+.valores li strong {
+    color: #003366;
+    font-weight: 700;
+}
+
+.servicios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.servicio {
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 8px;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.servicio:hover {
+    transform: translateY(-5px);
+}
+
+.servicio h3 {
+    font-size: 1.5em;
+    color: #003366;
+    margin-bottom: 15px;
+}
+
+.servicio ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.servicio li {
+    margin-bottom: 10px;
+    font-size: 1em;
+    color: #333;
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: #1a237e;
+    color: white;
+    padding: 40px 20px 20px;
+    margin-top: 40px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+}
+
+.footer-column:first-child {
+    gap: 20px;
+}
+
+.footer-column h3 {
+    font-size: 1.6em;
+    color: #2196F3;
+    margin-bottom: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.footer-column p {
+    color: rgba(255,255,255,0.9);
+    line-height: 1.4;
+    margin: 0;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column li {
+    margin-bottom: 8px;
+    color: rgba(255,255,255,0.9);
+    font-size: 0.9em;
+}
+
+.footer-column a {
+    color: rgba(255,255,255,0.9);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-column a:hover {
+    color: #2196F3;
+}
+
+.social-links-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-top: 10px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.logo img {
+    width: 140px; /* 200px - 30% = 140px */
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+.slogan {
+    font-size: 1rem;
+    margin: 0;
+    text-align: center;
+}
+
+.social-link {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* WhatsApp flotante */
+.whatsapp-float {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.whatsapp-float a {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #25D366;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
+}
+
+.whatsapp-float a:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.whatsapp-float img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+}
+
+.social-link:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.social-icon {
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+}
+
+/* Estilos para el copyright */
+.copyright {
+    background-color: #212529;
+    color: rgba(255,255,255,0.8);
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+.copyright .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.copyright p {
+    margin: 0;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+.copyright a {
+    color: #2196F3;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.copyright a:hover {
+    color: #007bff;
+}

@@ -1,0 +1,512 @@
+/* Mejoras de UI y Accesibilidad */
+:root {
+  /* Reset básico */
+  --margin: 0;
+  --padding: 0;
+  --box-sizing: border-box;
+
+  /* Colores */
+  --primary-color: #25D366;
+  --primary-dark: #128C7E;
+  --secondary-color: #4CAF50;
+  --text-color: #212529;
+  --background-color: #f5f5f5;
+  --disabled-text: #6c757d;
+  --success-color: #28a745;
+
+  /* Tipografía */
+  --font-family: 'Arial', sans-serif;
+  --font-size: 16px;
+  --line-height: 1.6;
+
+  /* Espaciado */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+
+  /* Transiciones */
+  --transition-base: 0.3s ease-in-out;
+
+  /* Sombras */
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+
+  /* Bordes */
+  --border-color: #dee2e6;
+  --border-radius-sm: 4px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 12px;
+  --border-radius-circle: 50%;
+
+  /* Estados */
+  --hover-bg: rgba(37, 211, 102, 0.1);
+  --focus-ring: 2px solid rgba(37, 211, 102, 0.2);
+  --disabled-bg: rgba(0, 123, 255, 0.05);
+
+  /* Formularios */
+  --surface: white;
+
+  /* WhatsApp */
+  --whatsapp-color: #25D366;
+  --whatsapp-hover: #128C7E;
+
+  /* Mejoras de UI */
+  --enhance-bg: #ffffff;
+  --enhance-text: #212529;
+  --enhance-border: #dee2e6;
+  --enhance-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --enhance-radius: 8px;
+  --enhance-padding: 16px;
+  --enhance-spacing: 8px;
+  --enhance-font-size: 14px;
+  --enhance-line-height: 1.5;
+  --enhance-transition: 0.3s ease-in-out;
+  --enhance-hover-bg: rgba(0, 123, 255, 0.05);
+  --enhance-active-bg: rgba(0, 123, 255, 0.1);
+  --enhance-focus-ring: 0 0 0 2px #007bff;
+  --enhance-icon-size: 20px;
+  --enhance-icon-spacing: 8px;
+  --enhance-card-width: 280px;
+  --enhance-card-max-width: 360px;
+  --enhance-card-min-height: 180px;
+  --enhance-card-padding: 16px;
+  --enhance-card-border: 1px solid var(--enhance-border);
+  --enhance-card-shadow: var(--enhance-shadow);
+  --enhance-card-radius: var(--enhance-radius);
+  --enhance-card-hover-bg: var(--enhance-hover-bg);
+  --enhance-card-hover-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --enhance-card-active-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --enhance-card-disabled-shadow: none;
+  --enhance-card-focus-ring: 0 0 0 2px #007bff;
+  --enhance-card-title-size: 1.1rem;
+  --enhance-card-title-weight: 500;
+  --enhance-card-title-color: var(--enhance-text);
+  --enhance-card-text-color: var(--enhance-text);
+  --enhance-card-link-color: #007bff;
+  --enhance-card-link-hover-color: #0056b3;
+}
+
+/* Reset básico */
+* {
+  margin: var(--margin);
+  padding: var(--padding);
+  box-sizing: var(--box-sizing);
+}
+
+/* Body y texto */
+body {
+  font-family: var(--font-family);
+  line-height: var(--line-height);
+  font-size: var(--font-size);
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+/* Enlaces más accesibles */
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color var(--transition-base);
+}
+
+a:hover {
+  color: var(--primary-dark);
+  text-decoration: underline;
+}
+
+/* Formularios mejorados */
+input,
+textarea {
+  border: 2px solid var(--border-color);
+  border-radius: var(--border-radius-md);
+  padding: var(--spacing-md) var(--spacing-lg);
+  font-size: 1rem;
+  transition: border-color var(--transition-base);
+  background-color: var(--surface);
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px var(--hover-bg);
+}
+
+/* Mejoras de accesibilidad */
+button,
+[role="button"] {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: var(--border-radius-md);
+  padding: var(--spacing-md) var(--spacing-lg);
+  cursor: pointer;
+  transition: background-color var(--transition-base);
+  font-family: var(--font-family);
+  font-size: 1rem;
+  line-height: var(--line-height);
+}
+
+button:hover,
+[role="button"]:hover {
+  background-color: var(--primary-dark);
+}
+
+button:focus,
+[role="button"]:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--focus-ring);
+}
+
+button:disabled,
+[role="button"]:disabled {
+  background-color: var(--disabled-bg);
+  color: var(--disabled-text);
+  cursor: not-allowed;
+}
+
+/* WhatsApp Button */
+.whatsapp-float {
+  position: fixed;
+  bottom: var(--spacing-xl);
+  right: var(--spacing-xl);
+  background-color: var(--whatsapp-color);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color var(--transition-base);
+  z-index: 1000;
+}
+
+.whatsapp-float:hover {
+  background-color: var(--whatsapp-hover);
+}
+
+.whatsapp-float img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Lazy Loading Images */
+.lazyload {
+  opacity: 0;
+  transition: opacity var(--transition-base);
+}
+
+.lazyload.loaded {
+  opacity: 1;
+}
+
+/* FAQ Toggle */
+.faq-item {
+  background: white;
+  border-radius: var(--border-radius-md);
+  margin-bottom: var(--spacing-md);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  transition: transform var(--transition-base);
+}
+
+.faq-item:hover {
+  transform: translateY(-5px);
+}
+
+.faq-question {
+  padding: var(--spacing-lg);
+  background: var(--surface);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--primary-text);
+  font-weight: 600;
+}
+
+.faq-answer {
+  padding: var(--spacing-lg);
+  display: none;
+  color: var(--secondary-text);
+  line-height: var(--line-height);
+}
+
+.faq-item.active .faq-answer {
+  display: block;
+}
+
+/* Chat Widget */
+.chat-button {
+  position: fixed;
+  bottom: var(--spacing-xl);
+  left: var(--spacing-xl);
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: var(--border-radius-md);
+  padding: var(--spacing-md) var(--spacing-lg);
+  cursor: pointer;
+  transition: background-color var(--transition-base);
+  z-index: 1000;
+}
+
+.chat-button:hover {
+  background-color: var(--primary-dark);
+}
+
+.chat-button img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Notification Badge */
+.notification-badge {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: var(--error-color);
+  color: white;
+  border-radius: 50%;
+  padding: 4px 8px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform var(--transition-base);
+  z-index: 1000;
+}
+
+.chat-button:hover {
+  transform: scale(1.1);
+}
+
+.chat-widget {
+  position: fixed;
+  bottom: var(--spacing-xl);
+  left: var(--spacing-xl);
+  width: 320px;
+  background: white;
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--shadow-md);
+  display: none;
+  z-index: 1000;
+}
+
+.chat-widget.active {
+  display: block;
+}
+
+/* Notification Badge */
+.notification-badge {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: var(--error-color);
+  color: white;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1;
+}  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+}  border-radius: var(--border-radius-circle);
+  padding: 4px 8px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+/* Loading Spinner */
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid var(--border);
+  border-top: 4px solid var(--primary-color);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .chat-widget {
+    width: 100%;
+    left: 0;
+    border-radius: 0;
+  }
+}
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  padding: var(--spacing-md);
+  transition: var(--transition-fast);
+}
+
+button:hover,
+[role="button"]:hover {
+  background-color: var(--hover-bg);
+}
+
+button:disabled,
+[role="button"]:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* Botón de WhatsApp mejorado */
+.whatsapp-float {
+  position: fixed;
+  bottom: var(--spacing-xl);
+  right: var(--spacing-xl);
+  z-index: 1000;
+  background: var(--whatsapp-color);
+  color: white;
+  border-radius: var(--border-radius-circle);
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-md);
+  transition: transform var(--transition-fast);
+}
+
+.whatsapp-float:hover {
+  background-color: var(--whatsapp-hover);
+  transform: scale(1.1);
+}
+
+/* Lazy loading para imágenes */
+img.lazyload {
+  opacity: 0;
+  transition: opacity var(--transition-fast);
+}
+
+img.lazyload.loaded {
+  opacity: 1;
+}
+
+/* FAQ mejorado */
+.faq-container {
+  margin: var(--spacing-xl) 0;
+}
+
+.faq-item {
+  border: 1px solid var(--border);
+  border-radius: var(--border-radius-md);
+  margin-bottom: var(--spacing-md);
+  overflow: hidden;
+}
+
+.faq-question {
+  background: var(--surface);
+  padding: var(--spacing-md);
+  cursor: pointer;
+  font-weight: 600;
+  transition: var(--transition-fast);
+}
+
+.faq-question:hover {
+  background-color: var(--hover-bg);
+}
+
+.faq-answer {
+  padding: var(--spacing-md);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height var(--transition-fast);
+}
+
+.faq-item.active .faq-answer {
+  max-height: 500px;
+}
+
+/* Chat en vivo */
+.chat-widget {
+  position: fixed;
+  bottom: var(--spacing-xl);
+  right: var(--spacing-xl);
+  z-index: 1000;
+  background: white;
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--shadow-md);
+  width: 320px;
+  display: none;
+}
+
+.chat-widget.active {
+  display: block;
+}
+
+/* Notificaciones push */
+.notification-badge {
+  position: fixed;
+  top: var(--spacing-xl);
+  right: var(--spacing-xl);
+  background: var(--success-color);
+  color: white;
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-lg);
+  z-index: 2000;
+}
+
+/* Loading spinner */
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid var(--primary-color);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Notificaciones push */
+.notification-badge {
+  position: fixed;
+  top: var(--spacing-xl);
+  right: var(--spacing-xl);
+  background: var(--success-color);
+  color: white;
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-lg);
+  z-index: 2000;
+}
+
+/* Loading spinner */
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid var(--primary-color);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

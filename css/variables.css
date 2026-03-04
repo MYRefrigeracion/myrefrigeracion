@@ -1,0 +1,168 @@
+/* Variables globales - Sistema de diseño de MY Refrigeración */
+:root {
+  /* Colores - Paleta principal */
+  --primary-color: #25D366; /* WhatsApp verde */
+  --primary-dark: #128C7E; /* WhatsApp verde oscuro */
+  --secondary-color: #6c757d; /* Gris neutro */
+  --success-color: #198754; /* Verde éxito */
+  --danger-color: #dc3545; /* Rojo error */
+  --warning-color: #ffc107; /* Amarillo advertencia */
+  --info-color: #0dcaf0; /* Azul información */
+  --light-color: #f8f9fa; /* Blanco claro */
+  --dark-color: #343a40; /* Negro claro */
+  --text-color: #212529; /* Texto principal */
+  --background-color: #ffffff; /* Fondo blanco */
+  
+  /* Tipografía - Sistema de tipografía */
+  --font-family: 'Arial', sans-serif;
+  --font-size: 16px; /* Base */
+  --font-size-sm: 14px; /* Pequeño */
+  --font-size-lg: 18px; /* Grande */
+  --line-height: 1.5; /* Altura de línea */
+  --font-weight-normal: 400; /* Normal */
+  --font-weight-bold: 700; /* Negrita */
+  
+  /* Espaciado - Sistema de espaciado */
+  --spacing-xs: 4px; /* Extra pequeño */
+  --spacing-sm: 8px; /* Pequeño */
+  --spacing-md: 16px; /* Medio */
+  --spacing-lg: 24px; /* Grande */
+  --spacing-xl: 32px; /* Extra grande */
+  
+  /* Bordes y sombras - Sistema de estilos */
+  --border-radius: 4px; /* Base */
+  --border-radius-lg: 8px; /* Grande */
+  --border-radius-xl: 12px; /* Extra grande */
+  --border-radius-circle: 50%; /* Circular */
+  --box-shadow-sm: 0 2px 4px rgba(0,0,0,0.05); /* Sombra pequeña */
+  --box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Sombra base */
+  --box-shadow-lg: 0 8px 12px rgba(0,0,0,0.15); /* Sombra grande */
+  
+  /* Transiciones y animaciones - Sistema de interacción */
+  --transition-base: 0.3s ease-in-out; /* Base */
+  --transition-fast: 0.2s ease-in-out; /* Rápida */
+  --transition-slow: 0.4s ease-in-out; /* Lenta */
+  
+  /* Estados - Sistema de estados */
+  --hover-bg: rgba(37, 211, 102, 0.05); /* Fondo hover */
+  --active-bg: rgba(37, 211, 102, 0.1); /* Fondo activo */
+  --focus-ring: 0 0 0 2px #25D366; /* Anillo foco */
+  --disabled-opacity: 0.65; /* Opacidad deshabilitado */
+  
+  /* Tamaños - Sistema de contenedores */
+  --container-width-sm: 540px; /* Pequeño */
+  --container-width-md: 720px; /* Medio */
+  --container-width-lg: 960px; /* Grande */
+  --container-width-xl: 1140px; /* Extra grande */
+  
+  /* WhatsApp - Sistema de integración */
+  --whatsapp-color: #25D366; /* Color base */
+  --whatsapp-hover: #128C7E; /* Color hover */
+  --whatsapp-text: #ffffff; /* Texto */
+  
+  /* Botones - Sistema de botones */
+  --button-height: 40px; /* Altura */
+  --button-padding: 0.75rem 1.5rem; /* Padding */
+  --button-border-radius: 0.25rem; /* Radio */
+  
+  /* Componentes - Sistema de componentes */
+  --table-border: 1px solid #dee2e6; /* Tablas */
+  --table-hover-bg: #f8f9fa; /* Hover tablas */
+  --table-active-bg: #e9ecef; /* Activo tablas */
+  --card-border: 1px solid rgba(0, 0, 0, 0.125); /* Tarjetas */
+}
+  --card-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075); /* Sombra tarjetas */
+  
+  /* Navegación - Sistema de navegación */
+  --nav-link-hover-color: var(--primary-color); /* Hover enlaces */
+  --nav-link-active-color: var(--primary-color); /* Activo enlaces */
+  --nav-link-active-bg: var(--hover-bg); /* Fondo activo enlaces */
+  
+  /* UI - Sistema de interfaz */
+  --button-hover-bg: rgba(37, 211, 102, 0.9); /* Fondo hover botón */
+  --button-active-bg: rgba(37, 211, 102, 0.8); /* Fondo activo botón */
+  --button-disabled-bg: #e9ecef; /* Fondo deshabilitado botón */
+  
+  /* Badges - Sistema de badges */
+  --badge-padding: var(--spacing-xs) var(--spacing-sm); /* Padding */
+  --badge-border-radius: var(--border-radius-circle); /* Radio */
+  --badge-font-size: 0.75rem; /* Tamaño fuente */
+  --badge-font-weight: var(--font-weight-bold); /* Peso fuente */
+  
+  /* Listas - Sistema de listas */
+  --list-group-border: 1px solid rgba(0, 0, 0, 0.125); /* Border */
+  --list-group-item-padding: var(--spacing-sm) var(--spacing-md); /* Padding */
+}
+
+  /* Modal */
+  --modal-backdrop-bg: rgba(0, 0, 0, 0.5);
+  --modal-border-radius: var(--border-radius-lg);
+  --modal-padding: var(--spacing-lg);
+
+  /* Tooltip */
+  --tooltip-bg: var(--text-color);
+  --tooltip-border-radius: var(--border-radius-sm);
+  --tooltip-padding: var(--spacing-xs) var(--spacing-sm);
+
+  /* Dropdown */
+  --dropdown-border: 1px solid rgba(0, 0, 0, 0.15);
+  --dropdown-border-radius: var(--border-radius-lg);
+  --dropdown-padding: var(--spacing-sm) 0;
+
+  /* Pagination */
+  --pagination-border: 1px solid #dee2e6;
+  --pagination-border-radius: var(--border-radius-md);
+  --pagination-padding: var(--spacing-sm) var(--spacing-md);
+
+  /* Progress */
+  --progress-height: 1rem;
+  --progress-border-radius: var(--border-radius-lg);
+  --progress-bg: #e9ecef;
+  --progress-bar-bg: var(--primary-color);
+
+  /* Spinner */
+  --spinner-width: 2rem;
+  --spinner-height: 2rem;
+  --spinner-border-width: 0.25em;
+  --spinner-border-color: var(--primary-color);
+
+  /* Toggle */
+  --toggle-border: 1px solid #dee2e6;
+  --toggle-border-radius: var(--border-radius-circle);
+  --toggle-padding: var(--spacing-xs);
+
+  /* Tabs */
+  --tab-border: 1px solid #dee2e6;
+  --tab-border-radius: var(--border-radius-lg);
+  --tab-padding: var(--spacing-sm) var(--spacing-md);
+
+  /* Carousel */
+  --carousel-control-width: 2rem;
+  --carousel-control-height: 2rem;
+  --carousel-control-bg: rgba(0, 0, 0, 0.5);
+  --carousel-control-border-radius: var(--border-radius-circle);
+
+  /* Collapse */
+  --collapse-border: 1px solid #dee2e6;
+  --collapse-border-radius: var(--border-radius-lg);
+  --collapse-padding: var(--spacing-md);
+
+  /* Accordion */
+  --accordion-border: 1px solid #dee2e6;
+  --accordion-border-radius: var(--border-radius-lg);
+  --accordion-padding: var(--spacing-md);
+
+  /* Timeline */
+  --timeline-border: 1px solid #dee2e6;
+  --timeline-padding: var(--spacing-md);
+
+  /* Chat */
+  --chat-border: 1px solid #dee2e6;
+  --chat-border-radius: var(--border-radius-lg);
+  --chat-padding: var(--spacing-md);
+
+  /* Stepper */
+  --stepper-border: 1px solid #dee2e6;
+  --stepper-border-radius: var(--border-radius-lg);
+  --stepper-padding: var(--spacing-md);
+}
