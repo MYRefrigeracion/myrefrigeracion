@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba</title>
+    <style>
+        .notificacion {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: #ff4444;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+    <div class="notificacion">
+        ¡Atención! Solo con turnos previos
+    </div>
+    <script>
+        // Mostrar el cartel emergente al cargar la página
+        document.addEventListener('DOMContentLoaded', function() {
+            const notificacion = document.querySelector('.notificacion');
+            setTimeout(() => {
+                notificacion.style.display = 'none';
+            }, 2000);
+        });
+    </script>
+</body>
+</html>
