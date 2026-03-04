@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galería | MY Refrigeración</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="css/galeria.css" type="text/css">
+</head>
+<body>
+  <!-- ENCABEZADO CON LOGO, SLOGAN, MENÚ Y REDES SOCIALES -->
+  <header>
+    <div class="header-container">
+      <img src="images/logo.png" alt="Logo My Refrigeración" class="logo">
+      <h1 class="slogan">&ldquo;Refrigeración eficiente, confort garantizado&rdquo;</h1>
+    </div>
+    <!-- Menú de navegación -->
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html" class="menu-item">Inicio</a></li>
+        <li><a href="nosotros.html" class="menu-item">Nosotros</a></li>
+        <li><a href="informacion.html" class="menu-item">Información</a></li>
+        <li><a href="galeria.html" class="menu-item active">Galería</a></li>
+        <li><a href="groupmy.html" class="menu-item">Group MY</a></li>
+        <li><a href="contacto.html" class="menu-item">Contacto</a></li>
+      </ul>
+    </nav>
+    <!-- Redes sociales -->
+    <div class="social-links">
+      <a href="https://www.facebook.com/profile.php?id=61570983437330" target="_blank" class="social-link">
+        <img src="icons/facebook.webp" alt="Facebook" class="social-icon">
+      </a>
+      <a href="https://www.instagram.com/refrigeracionmy" target="_blank" class="social-link">
+        <img src="icons/instagram.webp" alt="Instagram" class="social-icon">
+      </a>
+      <a href="https://www.tiktok.com/@myrefrigeracion" target="_blank" class="social-link">
+        <img src="icons/tiktok.webp" alt="TikTok" class="social-icon">
+      </a>
+      <a href="https://x.com/MYRefrigeracion" target="_blank" class="social-link">
+        <img src="icons/twitter.webp" alt="X" class="social-icon">
+      </a>
+      <a href="https://www.youtube.com/@MYRefrigeraci%C3%B3n" target="_blank" class="social-link">
+        <img src="icons/youtube.webp" alt="YouTube" class="social-icon">
+      </a>
+      <a href="https://wa.me/543815862899" target="_blank" class="social-link">
+        <img src="icons/whatsapp.webp" alt="WhatsApp" class="social-icon">
+      </a>
+    </div>
+  </header>
+
+  <main class="galeria-container">
+    <section class="videos">
+      <div class="videos-header">
+        <h2>Nuestros Trabajos</h2>
+        <p>Mira nuestros videos de trabajos realizados por nuestro equipo de trabajo</p>
+      </div>
+      
+      <!-- Lista de categorías de videos -->
+      <nav class="video-categories">
+        <ul>
+          <li><a href="#videos-aa" class="active">Aire Acondicionados</a></li>
+          <li><a href="#videos-hf">Heladeras y Freezer</a></li>
+        </ul>
+      </nav>
+
+      <!-- Contenedor principal de videos -->
+      <div class="video-container">
+        <!-- Aire Acondicionados -->
+        <div id="videos-aa" class="video-group active">
+          <h3>Aire Acondicionados</h3>
+          <div class="video-wrapper">
+            <video id="videoPlayer1" controls class="horizontal-video" playsinline>
+              <source src="videos/aa/0.mp4" type="video/mp4">
+              Tu navegador no soporta video.
+            </video>
+            <div class="video-controls">
+              <button onclick="prevVideo(1)" class="control-btn"><i class="fas fa-chevron-left"></i></button>
+              <button onclick="nextVideo(1)" class="control-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+          </div>
+          <div class="video-info">
+            <p>Reparaciones y mantenimiento de aire acondicionado</p>
+          </div>
+        </div>
+
+        <!-- Heladeras y Freezer -->
+        <div id="videos-hf" class="video-group">
+          <h3>Heladeras y Freezer</h3>
+          <div class="video-wrapper">
+            <video id="videoPlayer2" controls class="horizontal-video" playsinline>
+              <source src="videos/hf/1.mp4" type="video/mp4">
+              Tu navegador no soporta video.
+            </video>
+            <div class="video-controls">
+              <button onclick="prevVideo(2)" class="control-btn"><i class="fas fa-chevron-left"></i></button>
+              <button onclick="nextVideo(2)" class="control-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+          </div>
+          <div class="video-info">
+            <p>Reparaciones de heladeras y freezers domésticos</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3>MY Refrigeración</h3>
+        <p>Reparación de heladeras, freezers y aire acondicionado</p>
+        <p>Servicio técnico profesional en toda la provincia de Tucumán</p>
+      </div>
+
+      <div class="footer-column">
+        <h3>Enlaces</h3>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="galeria.html">Galería</a></li>
+          <li><a href="groupmy.html">Group MY</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="politica-privacidad.html">Política de Privacidad</a></li>
+          <li><a href="terminos-condiciones.html">Términos y Condiciones</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Horarios</h3>
+        <ul>
+          <li>Lunes a Viernes</li>
+          <li>8:00 a 17:00 hs</li>
+          <li>Sábados y domingos: cerrado</li>
+          <li>Atención solo con turno previo</li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Redes Sociales</h3>
+        <div class="social-links">
+          <a href="https://www.facebook.com/profile.php?id=61570983437330" target="_blank" class="social-link">
+            <img src="icons/facebook.webp" alt="Facebook" class="social-icon">
+          </a>
+          <a href="https://www.instagram.com/refrigeracionmy" target="_blank" class="social-link">
+            <img src="icons/instagram.webp" alt="Instagram" class="social-icon">
+          </a>
+          <a href="https://www.tiktok.com/@myrefrigeracion" target="_blank" class="social-link">
+            <img src="icons/tiktok.webp" alt="TikTok" class="social-icon">
+          </a>
+          <a href="https://x.com/MYRefrigeracion" target="_blank" class="social-link">
+            <img src="icons/twitter.webp" alt="X" class="social-icon">
+          </a>
+          <a href="https://www.youtube.com/@MYRefrigeraci%C3%B3n" target="_blank" class="social-link">
+            <img src="icons/youtube.webp" alt="YouTube" class="social-icon">
+          </a>
+          <a href="https://wa.me/543815862899" target="_blank" class="social-link">
+            <img src="icons/whatsapp.webp" alt="WhatsApp" class="social-icon">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Copyright y enlace de desarrollo -->
+    <div class="copyright">
+      <div class="container">
+        <p>&copy; 2025 MY Refrigeración. Todos los derechos reservados.</p>
+        <p>¿Te gustó esta página? <a href="desarrollo-web.html">Desarrollo Web</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botón de WhatsApp flotante -->
+  <link rel="stylesheet" href="css/whatsapp.css">
+  <div class="whatsapp-float">
+    <a href="https://wa.me/543815862899" target="_blank">
+      <img src="icons/whatsapp.webp" alt="Contactar por WhatsApp">
+    </a>
+  </div>
+  <script src="js/video-gallery.js"></script>
+</body>
+</html>

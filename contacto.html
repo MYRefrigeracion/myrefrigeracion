@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | MY Refrigeración</title>
+  <link rel="stylesheet" href="css/contacto.css">
+  <link rel="stylesheet" href="css/mobile.css">
+  <link rel="stylesheet" href="css/success-message.css">
+  <link rel="stylesheet" href="css/contact-info.css">
+  <script src="js/contact-form.js"></script>
+</head>
+<body>
+  <!-- ENCABEZADO CON LOGO, SLOGAN, MENÚ Y REDES SOCIALES -->
+  <header>
+    <div class="header-container">
+      <img src="images/logo.png" alt="Logo My Refrigeración" class="logo">
+      <p class="slogan">&ldquo;Refrigeración eficiente, confort garantizado&rdquo;</p>
+    </div>
+    <!-- Menú de navegación -->
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html" class="menu-item">Inicio</a></li>
+        <li><a href="nosotros.html" class="menu-item">Nosotros</a></li>
+        <li><a href="informacion.html" class="menu-item">Información</a></li>
+        <li><a href="galeria.html" class="menu-item">Galería</a></li>
+        <li><a href="groupmy.html" class="menu-item">Group MY</a></li>
+        <li><a href="contacto.html" class="menu-item active">Contacto</a></li>
+      </ul>
+    </nav>
+    <!-- Redes sociales -->
+    <div class="social-links">
+      <a href="https://www.facebook.com/profile.php?id=61570983437330" target="_blank" class="social-link">
+        <img src="icons/facebook.webp" alt="Facebook" class="social-icon">
+      </a>
+      <a href="https://www.instagram.com/refrigeracionmy" target="_blank" class="social-link">
+        <img src="icons/instagram.webp" alt="Instagram" class="social-icon">
+      </a>
+      <a href="https://www.tiktok.com/@myrefrigeracion" target="_blank" class="social-link">
+        <img src="icons/tiktok.webp" alt="TikTok" class="social-icon">
+      </a>
+      <a href="https://x.com/MYRefrigeracion" target="_blank" class="social-link">
+        <img src="icons/twitter.webp" alt="X" class="social-icon">
+      </a>
+      <a href="https://www.youtube.com/@MYRefrigeraci%C3%B3n" target="_blank" class="social-link">
+        <img src="icons/youtube.webp" alt="YouTube" class="social-icon">
+      </a>
+      <a href="https://wa.me/543815862899" target="_blank" class="social-link">
+        <img src="icons/whatsapp.webp" alt="WhatsApp" class="social-icon">
+      </a>
+    </div>
+  </header>
+
+  <main class="contacto-container">
+    <div class="contacto-form-container">
+      <h2>Contáctanos</h2>
+      <form action="https://formsubmit.co/myrefrigeracion2025@gmail.com" method="POST" class="contacto-form">
+        <!-- Configuraciones ocultas para FormSubmit -->
+        <input type="hidden" name="_next" value="https://myrefrigeracion.com.ar/contacto.html">
+        <input type="hidden" name="_subject" value="Consulta desde MY Refrigeración">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_success_response_type" value="json">
+        <input type="hidden" name="_autoresponse" value="Gracias por contactarnos! Su mensaje ha sido recibido. Nos pondremos en contacto con usted a la brevedad.">
+        <input type="hidden" name="_cc" value="myrefrigeracion2025@gmail.com">
+        <input type="hidden" name="_format" value="plain">
+        <input type="hidden" name="_text" value="true">
+        <div class="form-group">
+          <label for="nombre">Nombre y Apellido *</label>
+          <input type="text" id="nombre" name="nombre" required placeholder="Ingrese su nombre completo">
+        </div>
+
+        <div class="form-group">
+          <label for="telefono">Teléfono *</label>
+          <input type="tel" id="telefono" name="telefono" required placeholder="Ejemplo: 3815862899">
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email *</label>
+          <input type="email" id="email" name="email" required placeholder="Ingrese su email">
+        </div>
+
+        <div class="form-group">
+          <label for="consulta">Consulta o Mensaje *</label>
+          <textarea id="consulta" name="consulta" rows="5" required placeholder="Escriba su consulta o mensaje aquí"></textarea>
+        </div>
+
+        <div class="form-group">
+          <div class="checkbox-container">
+            <input type="checkbox" id="verificacion" name="verificacion" required>
+            <label for="verificacion">He verificado que los datos ingresados son correctos</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="checkbox-container">
+            <input type="checkbox" id="terminos" name="terminos" required>
+            <label for="terminos">Acepto los <a href="terminos-condiciones.html" target="_blank">Términos y Condiciones</a> y la <a href="politica-privacidad.html" target="_blank">Política de Privacidad</a></label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" class="submit-button">Enviar Consulta</button>
+        </div>
+        <!-- Mensaje de éxito -->
+        <div class="success-overlay" id="success-overlay" style="display: none;">
+          <div class="success-message-box">
+            <h3>¡Consulta enviada!</h3>
+            <p>Gracias por contactarnos. Nos pondremos en contacto con usted a la brevedad.</p>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div class="contact-info">
+      <h3>Servicio Técnico</h3>
+      <div class="info-grid">
+        <div class="info-item">
+          <h4>Área de Cobertura</h4>
+          <p><strong>Toda la provincia de Tucumán</strong></p>
+        </div>
+        <div class="info-item">
+          <h4>Sistema de Turnos</h4>
+          <p><strong>Turnos previos</strong></p>
+          <p>Solicite su turno para mayor comodidad</p>
+        </div>
+        <div class="info-item">
+          <h4>Contacto</h4>
+          <p><strong>Teléfono:</strong> 3815862899</p>
+          <p><strong>Horario:</strong> Lunes a Viernes, 8:00 a 17:00 hs</p>
+        </div>
+        <div class="info-item">
+          <h4>Medios de Pago</h4>
+          <p><strong>Aceptamos:</strong> todos los medios de pago</p>
+          <p><strong>Tarjetas de crédito:</strong> 10% de recargo</p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3>MY Refrigeración</h3>
+        <p>Reparación de heladeras, freezers y aire acondicionado</p>
+        <p>Servicio técnico profesional en toda la provincia de Tucumán</p>
+      </div>
+
+      <div class="footer-column">
+        <h3>Enlaces</h3>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="galeria.html">Galería</a></li>
+          <li><a href="groupmy.html">Group MY</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="politica-privacidad.html">Política de Privacidad</a></li>
+          <li><a href="terminos-condiciones.html">Términos y Condiciones</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Horarios</h3>
+        <ul>
+          <li>Lunes a Viernes</li>
+          <li>8:00 a 17:00 hs</li>
+          <li>Sábados y domingos: cerrado</li>
+          <li>Atención solo con turno previo</li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Redes Sociales</h3>
+        <div class="social-links">
+          <a href="https://www.facebook.com/profile.php?id=61570983437330" target="_blank" class="social-link">
+            <img src="icons/facebook.webp" alt="Facebook" class="social-icon">
+          </a>
+          <a href="https://www.instagram.com/refrigeracionmy" target="_blank" class="social-link">
+            <img src="icons/instagram.webp" alt="Instagram" class="social-icon">
+          </a>
+          <a href="https://www.tiktok.com/@myrefrigeracion" target="_blank" class="social-link">
+            <img src="icons/tiktok.webp" alt="TikTok" class="social-icon">
+          </a>
+          <a href="https://x.com/MYRefrigeracion" target="_blank" class="social-link">
+            <img src="icons/twitter.webp" alt="X" class="social-icon">
+          </a>
+          <a href="https://www.youtube.com/@MYRefrigeraci%C3%B3n" target="_blank" class="social-link">
+            <img src="icons/youtube.webp" alt="YouTube" class="social-icon">
+          </a>
+          <a href="https://wa.me/543815862899" target="_blank" class="social-link">
+            <img src="icons/whatsapp.webp" alt="WhatsApp" class="social-icon">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Copyright y enlace de desarrollo -->
+    <div class="copyright">
+      <div class="container">
+        <p>&copy; 2025 MY Refrigeración. Todos los derechos reservados.</p>
+        <p>¿Te gustó esta página? <a href="desarrollo-web.html">Desarrollo Web</a></p>
+      </div>
+    </div>
+  </footer>
+  <!-- Botón de WhatsApp flotante -->
+  <link rel="stylesheet" href="css/whatsapp.css">
+  <div class="whatsapp-float">
+    <a href="https://wa.me/543815862899" target="_blank">
+      <img src="icons/whatsapp.webp" alt="Contactar por WhatsApp">
+    </a>
+  </div>
+</body>
+</html>
