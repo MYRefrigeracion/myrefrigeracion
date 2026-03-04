@@ -1,0 +1,401 @@
+:root {
+  --chakra-ring-inset: var(--chakra-empty,/*!*/ /*!*/);
+  --chakra-ring-offset-width: 0px;
+  --chakra-ring-offset-color: #fff;
+  --chakra-ring-color: rgba(66, 153, 225, 0.6);
+  --chakra-ring-offset-shadow: 0 0 #0000;
+  --chakra-ring-shadow: 0 0 #0000;
+  --chakra-space-x-reverse: 0;
+  --chakra-space-y-reverse: 0;
+  --chakra-colors-transparent: transparent;
+  --chakra-colors-current: currentColor;
+  --chakra-colors-black: #000000;
+  --chakra-colors-white: #ffffff;
+  --chakra-colors-whiteAlpha-50: rgba(255, 255, 255, 0.04);
+  --chakra-colors-whiteAlpha-100: rgba(255, 255, 255, 0.06);
+  --chakra-colors-whiteAlpha-200: rgba(255, 255, 255, 0.08);
+  --chakra-colors-whiteAlpha-300: rgba(255, 255, 255, 0.16);
+  --chakra-colors-whiteAlpha-400: rgba(255, 255, 255, 0.24);
+  --chakra-colors-whiteAlpha-500: rgba(255, 255, 255, 0.36);
+  --chakra-colors-whiteAlpha-600: rgba(255, 255, 255, 0.48);
+  --chakra-colors-whiteAlpha-700: rgba(255, 255, 255, 0.64);
+  --chakra-colors-whiteAlpha-800: rgba(255, 255, 255, 0.80);
+  --chakra-colors-whiteAlpha-900: rgba(255, 255, 255, 0.92);
+  --chakra-colors-blackAlpha-50: rgba(0, 0, 0, 0.04);
+  --chakra-colors-blackAlpha-100: rgba(0, 0, 0, 0.06);
+  --chakra-colors-blackAlpha-200: rgba(0, 0, 0, 0.08);
+  --chakra-colors-blackAlpha-300: rgba(0, 0, 0, 0.16);
+  --chakra-colors-blackAlpha-400: rgba(0, 0, 0, 0.24);
+  --chakra-colors-blackAlpha-500: rgba(0, 0, 0, 0.36);
+  --chakra-colors-blackAlpha-600: rgba(0, 0, 0, 0.48);
+  --chakra-colors-blackAlpha-700: rgba(0, 0, 0, 0.64);
+  --chakra-colors-blackAlpha-800: rgba(0, 0, 0, 0.80);
+  --chakra-colors-blackAlpha-900: rgba(0, 0, 0, 0.92);
+  --chakra-colors-gray-50: #f5f5f6;
+  --chakra-colors-gray-100: #f5f5f6;
+  --chakra-colors-gray-200: #e6e6e7;
+  --chakra-colors-gray-300: #d0cfd2;
+  --chakra-colors-gray-400: #aeaeb2;
+  --chakra-colors-gray-500: #85858b;
+  --chakra-colors-gray-600: #66666b;
+  --chakra-colors-gray-700: #5b5b5f;
+  --chakra-colors-gray-800: #4d4d51;
+  --chakra-colors-gray-900: #444446;
+  --chakra-colors-gray-950: #3c3c3d;
+  --chakra-colors-gradient-light: linear-gradient(180deg, #FFFFFF 0%, #FCF9F5 100%);
+  --chakra-colors-gradient-dark: linear-gradient(180deg, #3c3838 0%, #272525 100%);
+  --chakra-colors-gradient-blue-to-purple: linear-gradient(91.78deg, #3300D9 1.24%, #9D20C9 73.37%, #DF7A6C 166.1%);
+  --chakra-colors-gradient-blue-to-orange: linear-gradient(92.91deg, #3300D9 2.18%, #9D20C9 44.94%, #DF7A6C 99.91%);
+  --chakra-colors-gradient-secondary-light: linear-gradient(120deg, var(--chakra-colors-sky-100) 0%, var(--chakra-colors-deepocean-200) 100%);
+  --chakra-colors-gradient-secondary-dark: linear-gradient(180deg, var(--chakra-colors-deepocean-950) 7.49%, var(--chakra-colors-sky-800) 57.5%, var(--chakra-colors-sky-300) 100%);
+  --chakra-colors-gradient-brand-bg: linear-gradient(96deg, var(--chakra-colors-deepocean-950) 7%,  var(--chakra-colors-deepocean-900) 21%,  var(--chakra-colors-deepocean-800) 46%,  var(--chakra-colors-sky-300) 100%);
+  --chakra-colors-gradient-brand-text: linear-gradient(96deg, var(--chakra-colors-deepocean-950) 7%,  var(--chakra-colors-deepocean-900) 46%,  var(--chakra-colors-deepocean-800) 100%);
+  --chakra-colors-gradient-sky: linear-gradient(0deg, #FFFFFF 4%, #AFE7FC 48%, #A8D1FF 71%, #CDDAFA 85%, #FFFBF2 100%);
+  --chakra-fonts-heading: 'ESBuild',sans-serif;
+  --chakra-fonts-body: 'PPMori',sans-serif;
+  --chakra-fonts-mono: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+  --chakra-space-1: 0.25rem;
+  --chakra-space-2: 0.5rem;
+  --chakra-space-3: 0.75rem;
+  --chakra-space-4: 1rem;
+  --chakra-space-5: 1.25rem;
+  --chakra-space-6: 1.5rem;
+  --chakra-space-7: 1.75rem;
+  --chakra-space-8: 2rem;
+  --chakra-space-9: 2.25rem;
+  --chakra-space-10: 2.5rem;
+  --chakra-space-12: 3rem;
+  --chakra-space-14: 3.5rem;
+  --chakra-space-16: 4rem;
+  --chakra-space-20: 5rem;
+  --chakra-space-24: 6rem;
+  --chakra-space-28: 7rem;
+  --chakra-space-32: 8rem;
+  --chakra-space-36: 9rem;
+  --chakra-space-40: 10rem;
+  --chakra-space-44: 11rem;
+  --chakra-space-48: 12rem;
+  --chakra-space-52: 13rem;
+  --chakra-space-56: 14rem;
+  --chakra-space-60: 15rem;
+  --chakra-space-64: 16rem;
+  --chakra-space-72: 18rem;
+  --chakra-space-80: 20rem;
+  --chakra-space-96: 24rem;
+  --chakra-space-px: 1px;
+  --chakra-space-0-5: 0.125rem;
+  --chakra-space-1-5: 0.375rem;
+  --chakra-space-2-5: 0.625rem;
+  --chakra-space-3-5: 0.875rem;
+  --chakra-shadows-xs: 0 0 0 1px rgba(0, 0, 0, 0.05);
+  --chakra-shadows-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --chakra-shadows-base: 0 1px 3px 0 rgba(0, 0, 0, 0.1),0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --chakra-shadows-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1),0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --chakra-shadows-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1),0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --chakra-shadows-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1),0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  --chakra-shadows-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  --chakra-shadows-outline: 0 0 0 3px rgba(66, 153, 225, 0.6);
+  --chakra-shadows-inner: inset 0 2px 4px 0 rgba(0,0,0,0.06);
+  --chakra-shadows-none: none;
+  --chakra-shadows-dark-lg: rgba(0, 0, 0, 0.1) 0px 0px 0px 1px,rgba(0, 0, 0, 0.2) 0px 5px 10px,rgba(0, 0, 0, 0.4) 0px 15px 40px;
+  --chakra-fontSizes-3xs: 0.45rem;
+  --chakra-fontSizes-2xs: 0.625rem;
+  --chakra-fontSizes-xs: 0.75rem;
+  --chakra-fontSizes-sm: 0.875rem;
+  --chakra-fontSizes-md: 1rem;
+  --chakra-fontSizes-lg: 1.125rem;
+  --chakra-fontSizes-xl: 1.25rem;
+  --chakra-fontSizes-2xl: 1.5rem;
+  --chakra-fontSizes-3xl: 1.875rem;
+  --chakra-fontSizes-4xl: 2.25rem;
+  --chakra-fontSizes-5xl: 3rem;
+  --chakra-fontSizes-6xl: 3.75rem;
+  --chakra-fontSizes-7xl: 4.5rem;
+  --chakra-fontSizes-8xl: 6rem;
+  --chakra-fontSizes-9xl: 8rem;
+  --chakra-fontSizes-xxs: 11px;
+  --chakra-fontWeights-hairline: 100;
+  --chakra-fontWeights-thin: 200;
+  --chakra-fontWeights-light: 300;
+  --chakra-fontWeights-normal: 400;
+  --chakra-fontWeights-medium: 500;
+  --chakra-fontWeights-semibold: 600;
+  --chakra-fontWeights-bold: 700;
+  --chakra-fontWeights-extrabold: 800;
+  --chakra-fontWeights-black: 900;
+  --chakra-letterSpacings-tighter: -0.05em;
+  --chakra-letterSpacings-tight: -0.025em;
+  --chakra-letterSpacings-normal: 0;
+  --chakra-letterSpacings-wide: 0.025em;
+  --chakra-letterSpacings-wider: 0.05em;
+  --chakra-letterSpacings-widest: 0.1em;
+  --chakra-lineHeights-3: .75rem;
+  --chakra-lineHeights-4: 1rem;
+  --chakra-lineHeights-5: 1.25rem;
+  --chakra-lineHeights-6: 1.5rem;
+  --chakra-lineHeights-7: 1.75rem;
+  --chakra-lineHeights-8: 2rem;
+  --chakra-lineHeights-9: 2.25rem;
+  --chakra-lineHeights-10: 2.5rem;
+  --chakra-lineHeights-normal: normal;
+  --chakra-lineHeights-none: 1;
+  --chakra-lineHeights-shorter: 1.25;
+  --chakra-lineHeights-short: 1.375;
+  --chakra-lineHeights-base: 1.5;
+  --chakra-lineHeights-tall: 1.625;
+  --chakra-lineHeights-taller: 2;
+}
+
+/* Estilos específicos para ocultar el banner de Gamma */
+.gammahosted-banner {
+    display: none !important;
+}
+
+.gammahosted-banner svg {
+    display: none !important;
+}
+
+/* Estilos para el número de teléfono en el encabezado */
+.telefono-header {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    background: var(--chakra-colors-white);
+    padding: 0.5rem 1rem;
+    border-radius: var(--chakra-radii-lg);
+    box-shadow: var(--chakra-shadows-sm);
+    font-family: var(--chakra-fonts-body);
+    font-size: var(--chakra-fontSizes-md);
+    color: var(--chakra-colors-gray-800);
+    z-index: var(--chakra-zIndices-sticky);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.telefono-header a {
+    color: var(--chakra-colors-primary-600);
+    text-decoration: none;
+    font-weight: var(--chakra-fontWeights-medium);
+}
+
+.telefono-header a:hover {
+    color: var(--chakra-colors-primary-700);
+}
+
+/* Estilos específicos para el SVG de Gamma */
+#Layer_1 {
+  display: none !important;
+}
+
+/* Estilos para el enlace de Gamma */
+a[href*="gamma.app"] {
+  display: none !important;
+}
+
+/* Estilos para los elementos específicos del banner */
+.css-u02v1v,
+.css-m3qaau,
+.css-a8v41h {
+  display: none !important;
+}
+
+/* Estilos para el botón de WhatsApp */
+.chakra-button[data-id="whatsapp-button"] {
+  position: fixed !important;
+  bottom: 20px !important;
+  right: 20px !important;
+  z-index: 9999 !important;
+}
+
+/* Estilos para el botón de WhatsApp */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+}
+
+.whatsapp-float a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #25D366;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+.whatsapp-float a:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+.whatsapp-icon {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+/* Estilos para el cuerpo y contenedor principal */
+body {
+  margin: 0;
+  font-family: var(--chakra-fonts-body);
+  background: var(--chakra-colors-gradient-brand-bg);
+  color: var(--chakra-colors-white);
+  min-height: 100vh;
+  padding: var(--chakra-space-4);
+}
+
+.container {
+  max-width: var(--chakra-sizes-container-lg);
+  margin: 0 auto;
+  padding: 0 var(--chakra-space-4);
+}
+
+/* Estilos para el header */
+.header {
+  background: var(--chakra-colors-gradient-dark);
+  padding: var(--chakra-space-6);
+  border-radius: var(--chakra-radii-lg);
+  box-shadow: var(--chakra-shadows-dark-lg);
+  margin-bottom: var(--chakra-space-8);
+}
+
+.logo {
+  font-family: var(--chakra-fonts-heading);
+  font-size: var(--chakra-fontSizes-4xl);
+  background: var(--chakra-colors-gradient-brand-text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: var(--chakra-fontWeights-bold);
+  margin-bottom: var(--chakra-space-4);
+}
+
+.nav-links {
+  display: flex;
+  gap: var(--chakra-space-4);
+  justify-content: center;
+  margin-top: var(--chakra-space-4);
+}
+
+.nav-link {
+  color: var(--chakra-colors-white);
+  text-decoration: none;
+  font-size: var(--chakra-fontSizes-lg);
+  font-weight: var(--chakra-fontWeights-medium);
+  transition: color var(--chakra-transition-duration-normal);
+}
+
+.nav-link:hover {
+  color: var(--chakra-colors-sky-300);
+}
+
+/* Estilos para el hero section */
+.hero {
+  background: var(--chakra-colors-gradient-secondary-dark);
+  padding: var(--chakra-space-12);
+  border-radius: var(--chakra-radii-xl);
+  margin-bottom: var(--chakra-space-12);
+  box-shadow: var(--chakra-shadows-lg);
+}
+
+.hero-title {
+  font-family: var(--chakra-fonts-heading);
+  font-size: var(--chakra-fontSizes-6xl);
+  font-weight: var(--chakra-fontWeights-bold);
+  background: var(--chakra-colors-gradient-brand-text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: var(--chakra-space-4);
+}
+
+.hero-description {
+  font-size: var(--chakra-fontSizes-xl);
+  line-height: var(--chakra-lineHeights-tall);
+  color: var(--chakra-colors-whiteAlpha-700);
+  margin-bottom: var(--chakra-space-8);
+}
+
+.cta-button {
+  background: var(--chakra-colors-gradient-blue-to-purple);
+  padding: var(--chakra-space-4) var(--chakra-space-8);
+  border-radius: var(--chakra-radii-lg);
+  color: var(--chakra-colors-white);
+  text-decoration: none;
+  font-size: var(--chakra-fontSizes-lg);
+  font-weight: var(--chakra-fontWeights-semibold);
+  transition: transform var(--chakra-transition-duration-normal);
+}
+
+.cta-button:hover {
+  transform: translateY(-2px);
+}
+
+/* Estilos para los servicios */
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--chakra-space-8);
+  margin-top: var(--chakra-space-12);
+}
+
+.service-card {
+  background: var(--chakra-colors-gradient-secondary-light);
+  padding: var(--chakra-space-6);
+  border-radius: var(--chakra-radii-xl);
+  box-shadow: var(--chakra-shadows-md);
+  transition: transform var(--chakra-transition-duration-normal);
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-title {
+  font-family: var(--chakra-fonts-heading);
+  font-size: var(--chakra-fontSizes-2xl);
+  background: var(--chakra-colors-gradient-brand-text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: var(--chakra-space-3);
+}
+
+.service-description {
+  color: var(--chakra-colors-whiteAlpha-700);
+  line-height: var(--chakra-lineHeights-tall);
+}
+
+/* Estilos para el footer */
+.footer-contact-info {
+  background: var(--chakra-colors-gradient-secondary-light);
+  padding: var(--chakra-space-6);
+  text-align: center;
+  border-radius: var(--chakra-radii-xl);
+  box-shadow: var(--chakra-shadows-md);
+  margin-top: var(--chakra-space-8);
+}
+
+.footer-contact-info .footer-text {
+  margin-bottom: var(--chakra-space-2);
+  color: var(--chakra-colors-gray-600);
+  font-size: var(--chakra-fontSizes-md);
+}
+
+.footer-contact-info a {
+  color: var(--chakra-colors-deepocean-900);
+  text-decoration: none;
+  font-weight: var(--chakra-fontWeights-medium);
+  transition: color 0.3s ease;
+}
+
+.footer-contact-info a:hover {
+  color: var(--chakra-colors-deepocean-700);
+}
+
+.footer-text {
+  color: var(--chakra-colors-whiteAlpha-600);
+  font-size: var(--chakra-fontSizes-lg);
+}
