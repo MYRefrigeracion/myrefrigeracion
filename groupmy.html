@@ -1,703 +1,119 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-AR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="icon" type="image/x-icon" href="/favicon.ico">
-  <meta name="theme-color" content="#007bff">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="apple-mobile-web-app-title" content="MY Refrigeración">
-  <link rel="apple-touch-icon" href="icons/icon-180x180.png">
-  <link rel="apple-touch-startup-image" href="icons/splash-2048x2732.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
-  <link rel="apple-touch-startup-image" href="icons/splash-2732x2048.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
-  <link rel="manifest" href="/manifest.json">
-  <meta name="description" content="De MY Refrigeración a Group MY: una evolución pensada para vos. Soluciones integrales para hogares y empresas en Tucumán.">
-  <meta name="keywords" content="refrigeración Tucumán, heladeras Tucumán, freezers Tucumán, aire acondicionado Tucumán, servicio técnico Tucumán, reparación electrodomésticos Tucumán, mantenimiento Tucumán, climatización Tucumán, refrigeración profesional Tucumán">
+  <title>Group MY | Soluciones integrales</title>
+  <meta name="description" content="Group MY ofrece soluciones integrales de refrigeración, electricidad, plomería y mantenimiento.">
   <meta name="author" content="MY Refrigeración">
   <meta name="robots" content="index, follow">
-  <meta name="geo.region" content="AR-T">
-  <meta name="geo.placename" content="Tucumán">
-  <meta name="geo.position" content="-26.820774;-65.223762">
-  <meta name="ICBM" content="-26.820774, -65.223762">
-  
-  <!-- Open Graph / Facebook -->
+  <meta name="theme-color" content="#0b4f8a">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <meta property="og:title" content="Group MY | Soluciones integrales">
+  <meta property="og:description" content="Group MY ofrece soluciones integrales de refrigeración, electricidad, plomería y mantenimiento.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.myrefrigeracion.com.ar/groupmy.html">
-  <meta property="og:title" content="Group MY - Soluciones integrales">
-  <meta property="og:description" content="De MY Refrigeración a Group MY: una evolución pensada para vos. Soluciones integrales para hogares y empresas en Tucumán.">
   <meta property="og:image" content="https://www.myrefrigeracion.com.ar/images/logo.png">
-
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://www.myrefrigeracion.com.ar/groupmy.html">
-  <meta property="twitter:title" content="Group MY - Soluciones integrales">
-  <meta property="twitter:description" content="De MY Refrigeración a Group MY: una evolución pensada para vos. Soluciones integrales para hogares y empresas en Tucumán.">
-  <meta property="twitter:image" content="https://www.myrefrigeracion.com.ar/images/logo.png">
-
-  <title>Group MY - Soluciones integrales | MY Refrigeración</title>
+  <meta property="og:locale" content="es_AR">
+  <link rel="stylesheet" href="css/pro-site.css?v=20260430b">
   
-  <!-- Hojas de estilo -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link rel="stylesheet" href="css/variables.css">
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/mobile.css">
-  <link rel="stylesheet" href="css/whatsapp.css">
-  <link rel="stylesheet" href="css/enhancements.css">
-  <link rel="stylesheet" href="css/mygroup.css">
-  
-  <!-- Scripts -->
-  <script src="js/enhancements.js" defer></script>
-  <script src="js/contact-form.js" defer></script>
-  <script src="https://apis.google.com/js/platform.js" async defer></script>
-  <script>
-    // Menú móvil
-    document.addEventListener('DOMContentLoaded', function() {
-      const menuToggle = document.querySelector('.menu-toggle');
-      const navMenu = document.querySelector('.nav-menu');
-      
-      menuToggle.addEventListener('click', function() {
-        navMenu.classList.toggle('active');
-        this.setAttribute('aria-expanded', this.getAttribute('aria-expanded') === 'true' ? 'false' : 'true');
-      });
-      
-      // Cerrar menú al hacer clic en un enlace
-      document.querySelectorAll('.nav-menu a').forEach(link => {
-        link.addEventListener('click', () => {
-          navMenu.classList.remove('active');
-          menuToggle.setAttribute('aria-expanded', 'false');
-        });
-      });
-      
-      // Ajustar el padding del body para el header fijo
-      document.documentElement.style.setProperty('--header-height', document.querySelector('.site-header').offsetHeight + 'px');
-      document.body.style.paddingTop = 'var(--header-height)';
-    });
-    
-    // Ajustar el padding al cambiar el tamaño de la ventana
-    window.addEventListener('resize', function() {
-      document.documentElement.style.setProperty('--header-height', document.querySelector('.site-header').offsetHeight + 'px');
-    });
-  </script>
-    <style>
-        /* Estilos para el encabezado */
-        .site-header {
-            background: #fff;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-        }
-
-        /* Barra de redes sociales */
-        .social-bar {
-            background: #f8f9fa;
-            padding: 10px 0;
-            border-bottom: 1px solid #eee;
-        }
-
-        .social-links {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 15px;
-            padding: 10px 0;
-            background: transparent !important;
-        }
-        
-        .social-icon {
-            width: 30px;
-            height: 30px;
-            transition: transform 0.3s ease;
-        }
-        
-        .social-icon:hover {
-            transform: scale(1.1);
-        }
-
-        /* Menú de navegación */
-        .main-nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 5%;
-            max-width: 1400px;
-            margin: 0 auto;
-        }
-
-        .logo img {
-            height: 60px;
-            width: auto;
-        }
-
-        .nav-menu {
-            display: flex;
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            gap: 25px;
-        }
-
-        .nav-menu li a {
-            color: #333;
-            text-decoration: none;
-            font-weight: 500;
-            padding: 10px 0;
-            position: relative;
-            transition: color 0.3s ease;
-        }
-
-        .nav-menu li a:hover,
-        .nav-menu li a.active {
-            color: #25D366; /* Color de WhatsApp */
-        }
-
-        .nav-menu li a::after {
-            content: '';
-            position: absolute;
-            width: 0;
-            height: 2px;
-            background: #25D366;
-            bottom: 0;
-            left: 0;
-            transition: width 0.3s ease;
-        }
-
-        .nav-menu li a:hover::after,
-        .nav-menu li a.active::after {
-            width: 100%;
-        }
-
-        .menu-toggle {
-            display: none;
-            background: none;
-            border: none;
-            font-size: 24px;
-            cursor: pointer;
-            color: #333;
-        }
-
-        @media (max-width: 992px) {
-            .menu-toggle {
-                display: block;
-            }
-
-            .nav-menu {
-                display: none;
-                position: absolute;
-                top: 100%;
-                left: 0;
-                right: 0;
-                background: #fff;
-                flex-direction: column;
-                padding: 20px;
-                box-shadow: 0 5px 10px rgba(0,0,0,0.1);
-            }
-
-            .nav-menu.active {
-                display: flex;
-            }
-
-            .nav-menu li {
-                text-align: center;
-                padding: 10px 0;
-            }
-        }
-        
-        /* Estilos específicos para la página Group MY */
-        .group-section {
-            padding: 100px 20px 60px;
-            background-color: var(--background-color);
-            min-height: calc(100vh - 200px);
-        }
-        
-        .group-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            background: var(--background-color);
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 2px 15px rgba(0,0,0,0.05);
-        }
-        
-        .group-title {
-            color: #2c3e50;
-            margin-bottom: 30px;
-            font-size: 2.2em;
-            text-align: center;
-            color: #003366;
-        }
-        
-        .services-list {
-            list-style-type: none;
-            padding: 0;
-            margin: 30px 0;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-        }
-        
-        .services-list li {
-            background: #f0f7ff;
-            padding: 20px 15px;
-            border-radius: 8px;
-            text-align: center;
-            font-weight: 500;
-            color: #2c3e50;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        
-        .services-list li:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
-        
-        .contact-cta {
-            text-align: center;
-            margin-top: 50px;
-        }
-        
-        .contact-cta a {
-            display: inline-block;
-            background: #003366;
-            color: white;
-            padding: 15px 30px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 1.1em;
-            transition: background 0.3s ease;
-        }
-        
-        .contact-cta a:hover {
-            background: #004080;
-        }
-        
-        .btn-contact {
-            display: inline-block;
-            background: var(--primary-color);
-            color: white;
-            padding: 15px 30px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 1.1em;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
-            border: none;
-            cursor: pointer;
-        }
-        
-        .btn-contact:hover {
-            background: var(--primary-dark);
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(18, 140, 126, 0.4);
-        }
-        
-        .btn-contact i {
-            margin-right: 10px;
-        }
-        
-        /* Estilos para el encabezado */
-        .site-header {
-            background: #fff;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-        }
-
-        /* Barra superior con logo y redes */
-        .top-bar {
-            background: #f8f9fa;
-            padding: 8px 0;
-            border-bottom: 1px solid #eee;
-        }
-
-        .top-bar .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        /* Estilos del logo */
-        .logo img {
-            height: 50px;
-            width: auto;
-            display: block;
-        }
-
-        /* Estilos de las redes sociales */
-        .social-links {
-            display: flex;
-            gap: 12px;
-            align-items: center;
-        }
-
-        .social-links {
-            display: inline-flex;
-            gap: 12px;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .social-icon {
-            width: 28px;
-            height: 28px;
-            transition: transform 0.3s ease;
-        }
-
-        .social-icon:hover {
-            transform: scale(1.1);
-        }
-
-        .main-nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 5%;
-            background: #fff;
-            max-width: 1400px;
-            margin: 0 auto;
-        }
-
-        .logo img {
-            height: 50px;
-            width: auto;
-        }
-
-        .nav-menu {
-            display: flex;
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            gap: 20px;
-        }
-
-        .nav-menu li a {
-            color: #333;
-            text-decoration: none;
-            font-weight: 500;
-            padding: 8px 0;
-            position: relative;
-            transition: color 0.3s ease;
-            font-size: 0.95em;
-        }
-
-        .nav-menu li a:hover,
-        .nav-menu li a.active {
-            color: #25D366; /* Color de WhatsApp */
-        }
-
-        .nav-menu li a::after {
-            content: '';
-            position: absolute;
-            width: 0;
-            height: 2px;
-            background: #25D366;
-            bottom: 0;
-            left: 0;
-            transition: width 0.3s ease;
-        }
-
-        .nav-menu li a:hover::after,
-        .nav-menu li a.active::after {
-            width: 100%;
-        }
-
-        .menu-toggle {
-            display: none;
-            background: none;
-            border: none;
-            font-size: 24px;
-            cursor: pointer;
-            color: #333;
-        }
-
-        @media (max-width: 992px) {
-            .menu-toggle {
-                display: block;
-            }
-
-            .nav-menu {
-                display: none;
-                position: absolute;
-                top: 100%;
-                left: 0;
-                right: 0;
-                background: #fff;
-                flex-direction: column;
-                padding: 15px 0;
-                box-shadow: 0 5px 10px rgba(0,0,0,0.1);
-                text-align: center;
-            }
-
-            .nav-menu.active {
-                display: flex;
-            }
-
-            .nav-menu li {
-                padding: 10px 0;
-            }
-        }
-        .menu a.active {
-            color: var(--primary-color);
-            background-color: rgba(255, 255, 255, 0.1);
-        }
-        
-        .logo img {
-            height: 50px;
-            width: auto;
-        }
-        
-        .slogan {
-            color: var(--text-light);
-            font-size: 1em;
-            margin: 10px 20px 0;
-            font-weight: 400;
-        }
-        
-        .mobile-menu-toggle {
-            display: none;
-            background: none;
-            border: none;
-            color: var(--text-light);
-            font-size: 1.5em;
-            cursor: pointer;
-            position: absolute;
-            right: 20px;
-            top: 20px;
-            z-index: 10;
-        }
-        
-        /* Estilos para el footer */
-        footer {
-            background-color: #003366; /* Mismo azul que en index.html */
-            color: #ffffff;
-            padding: 40px 0 0;
-        }
-        
-        .footer-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        
-        .footer-column h3 {
-            color: var(--primary-color);
-            margin-bottom: 20px;
-            font-size: 1.2em;
-        }
-        
-        .footer-column a {
-            color: var(--light-color);
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-        
-        .footer-column a:hover {
-            color: var(--primary-color);
-        }
-        
-        .copyright {
-            text-align: center;
-            padding: 20px 0;
-            margin-top: 30px;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            font-size: 0.9em;
-            color: #adb5bd;
-        }
-        
-        @media (max-width: 768px) {
-            .group-content {
-                padding: 25px 20px;
-            }
-            
-            .group-title {
-                font-size: 1.8em;
-            }
-            
-            .services-list {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
+  <script src="js/pro-site.js?v=20260430b" defer></script>
 </head>
-<body>
-  <!-- ENCABEZADO -->
-  <header style="background: linear-gradient(135deg, var(--primary-color), var(--primary-dark)); color: var(--text-light); text-align: center; padding: 15px 0; position: relative; overflow: hidden;">
-    <div class="header-container" style="position: relative; z-index: 2;">
-      <a href="/" class="logo">
-        <img src="images/logo.png" alt="Logo MY Refrigeración - Servicio Técnico Especializado" loading="eager">
-      </a>
-      <h1 class="slogan" style="color: #333; margin: 0; font-size: 1.1em; font-weight: normal;">"Soluciones integrales, con el respaldo de siempre."</h1>
-      
-      <!-- Botón de menú móvil -->
-      <button class="mobile-menu-toggle" aria-label="Menú" aria-expanded="false">
-        <i class="fas fa-bars"></i>
-      </button>
+<body class="pro-page ">
+
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="site-header" data-site-header>
+    <div class="topbar">
+      <div class="container topbar__content">
+        <span>Atención con turnos previos · Tucumán</span>
+        <a href="tel:+543815862899">Llamar: 381 586-2899</a>
+      </div>
     </div>
-    <!-- Menú de navegación -->
-    <nav>
-      <ul class="menu">
-        <li><a href="index.html" class="menu-item">Inicio</a></li>
-        <li><a href="nosotros.html" class="menu-item">Nosotros</a></li>
-        <li><a href="informacion.html" class="menu-item">Información</a></li>
-        <li><a href="galeria.html" class="menu-item">Galería</a></li>
-        <li><a href="groupmy.html" class="menu-item active">Group MY</a></li>
-        <li><a href="contacto.html" class="menu-item">Contacto</a></li>
-      </ul>
-    </nav>
-    <!-- Redes sociales -->
-    <div class="social-links" style="display: flex; justify-content: center; gap: 15px; padding: 10px 0;">
-      <a href="https://www.facebook.com/profile.php?id=61570983437330" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-        <img src="icons/facebook.webp" alt="Facebook" class="social-icon" loading="lazy">
+    <div class="container navbar">
+      <a class="brand" href="index.html" aria-label="MY Refrigeración - Inicio">
+        <img src="images/logo.png" alt="MY Refrigeración" width="92" height="92">
+        <span>
+          <strong>MY Refrigeración</strong>
+          <small>Refrigeración eficiente, confort garantizado</small>
+        </span>
       </a>
-      <a href="https://www.instagram.com/refrigeracionmy" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-        <img src="icons/instagram.webp" alt="Instagram" class="social-icon" loading="lazy">
-      </a>
-      <a href="https://www.tiktok.com/@myrefrigeracion" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
-        <img src="icons/tiktok.webp" alt="TikTok" class="social-icon" loading="lazy">
-      </a>
-      <a href="https://x.com/MYRefrigeracion" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
-        <img src="icons/twitter.webp" alt="X" class="social-icon" loading="lazy">
-      </a>
-      <a href="https://www.youtube.com/@MYRefrigeraci%C3%B3n" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
-        <img src="icons/youtube.webp" alt="YouTube" class="social-icon" loading="lazy">
-      </a>
-      <a href="https://wa.me/543815862899" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
-        <img src="icons/whatsapp.webp" alt="WhatsApp" class="social-icon" loading="lazy">
-      </a>
+      <button class="nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" data-nav-toggle>
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" aria-label="Navegación principal" data-site-nav>
+        <a href="index.html">Inicio</a> <a href="nosotros.html">Nosotros</a> <a href="informacion.html">Información</a> <a href="galeria.html">Galería</a> <a class="active" href="groupmy.html">Group MY</a> <a href="instalar-app.html">App</a> <a class="nav-cta" href="contacto.html">Contacto</a>
+      </nav>
     </div>
   </header>
-        <li><a href="contacto.html" style="color: white; text-decoration: none; font-weight: 500;">Contacto</a></li>
-      </ul>
-    </div>
-  </nav>
+  <main id="contenido">
 
-  <!-- Contenido principal -->
-  <!-- Espacio para el header fijo -->
-  <div style="height: 120px;"></div>
-  
-  <main class="group-section">
-        <div class="group-content">
-            <h1 class="group-title">🛠️ De MY Refrigeración a Group MY: una evolución pensada para vos</h1>
-            
-            <p>Gracias a la confianza de nuestros clientes, que valoran la responsabilidad, la calidad de servicio y el trato cercano que nos caracteriza, decidimos dar un paso más: MY Refrigeración evoluciona y se convierte en Group MY.</p>
-            
-            <p>Seguimos siendo la misma familia, con el mismo compromiso y profesionalismo de siempre. Pero ahora, además de refrigeración, ofrecemos soluciones integrales para hogares, empresas, bancos e instituciones:</p>
-            
-            <ul class="services-list">
-                <li>Plomería</li>
-                <li>Albañilería</li>
-                <li>Carpintería</li>
-                <li>Electricidad</li>
-                <li>Pintura</li>
-                <li>Y más servicios técnicos a medida</li>
-            </ul>
-            
-            <p>Contamos con el respaldo de una empresa conocida, responsable y que cumple con lo prometido. Clientes como Urbano, Ocasa, Megamoto, Paladini, entre otros, ya confían en nosotros para sus necesidades técnicas y operativas.</p>
-            
-            <p>Esperamos seguir creciendo junto a ustedes, brindando cada vez más soluciones con el mismo compromiso de siempre.</p>
-            
-            <p>No duden en contactarnos: estamos para ayudarles, en su hogar o en su empresa.</p>
-            
-            <div class="contact-cta">
-                <a href="tel:+543815862899" class="btn-contact">
-                    <i class="fas fa-phone-alt"></i> (381) 586-2899
-                </a>
-            </div>
-        </div>
-    </main>
-
-
-  <!-- PIE DE PÁGINA -->
-  <!-- FOOTER -->
-  <footer>
-    <div class="footer-container">
-      <div class="footer-column">
-        <h3>MY Refrigeración</h3>
-        <p>Servicio técnico especializado en Tucumán</p>
-        <p>Reparación de heladeras, freezers y aire acondicionado</p>
-        <p>Atención en toda la provincia de Tucumán</p>
-        <p>Dirección: Maipú 974, Tucumán, Argentina</p>
-        <p>Código Postal: 4000</p>
+    <section class="page-hero">
+      <div class="container page-hero__grid">
+        <div><p class="eyebrow">Group MY</p><h1>Soluciones integrales para hogares, comercios e instituciones.</h1><p>Un servicio pensado para resolver mantenimiento de manera ordenada: refrigeración, electricidad, plomería, pintura, carpintería, herrería y más.</p><div class="button-row"><a class="btn btn-primary" href="contacto.html">Consultar servicio</a><a class="btn btn-secondary" href="tel:+543815862899">Llamar</a></div></div>
+        <div class="page-hero__media"><img src="images/emy.webp" alt="Group MY soluciones integrales"></div>
       </div>
+    </section>
+    <section class="section section-soft"><div class="container"><div class="section-heading"><p class="eyebrow">Servicios integrales</p><h2>Un solo contacto para varias necesidades</h2></div><div class="cards-grid three-grid"><article class="service-card pro-card"><span class="service-card__icon">❄️</span><h3>Refrigeración</h3><p>Heladeras, freezers, cámaras, aire acondicionado e instalaciones.</p></article><article class="service-card pro-card"><span class="service-card__icon">⚡</span><h3>Electricidad</h3><p>Reparaciones, revisiones y mejoras eléctricas con criterio técnico.</p></article><article class="service-card pro-card"><span class="service-card__icon">🚰</span><h3>Plomería</h3><p>Soluciones para pérdidas, instalaciones y mantenimiento general.</p></article><article class="service-card pro-card"><span class="service-card__icon">🎨</span><h3>Pintura</h3><p>Terminaciones, mantenimiento y mejoras estéticas para espacios.</p></article><article class="service-card pro-card"><span class="service-card__icon">🪚</span><h3>Carpintería</h3><p>Arreglos, instalaciones y trabajos prácticos para el hogar o comercio.</p></article><article class="service-card pro-card"><span class="service-card__icon">🔧</span><h3>Herrería</h3><p>Trabajos y reparaciones según necesidad del cliente.</p></article></div></div></section>
+    <section class="section"><div class="container split-section"><div><p class="eyebrow">Plan de asistencia</p><h2>La idea es simplificar el mantenimiento.</h2><p class="lead-text">Group MY puede crecer como un plan de asistencia y mantenimiento, con técnicos asociados, clientes registrados y seguimiento de solicitudes.</p><div class="check-list"><p><span>✓</span> Registro de clientes y solicitudes.</p><p><span>✓</span> Técnicos y trabajadores asociados.</p><p><span>✓</span> Servicios coordinados con comunicación clara.</p></div></div><div class="process-card pro-card"><div class="process-step"><b>1</b><span>El cliente consulta</span></div><div class="process-step"><b>2</b><span>Se define el tipo de servicio</span></div><div class="process-step"><b>3</b><span>Se coordina visita o presupuesto</span></div></div></div></section>
+  </main>
 
-      <div class="footer-column">
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="footer-brand" href="index.html">
+          <img src="images/logo.png" alt="MY Refrigeración" width="70" height="70">
+          <span>MY Refrigeración</span>
+        </a>
+        <p>Servicio técnico especializado e integral en Tucumán. Atención con turnos previos, diagnóstico claro y garantía.</p>
+        <div class="footer-social" aria-label="Redes sociales">
+          <a href="https://www.instagram.com/refrigeracionmy" aria-label="Instagram"><img src="icons/instagram.webp" alt=""></a>
+          <a href="https://www.facebook.com/profile.php?id=61570983437330" aria-label="Facebook"><img src="icons/facebook.webp" alt=""></a>
+          <a href="https://www.tiktok.com/@myrefrigeracion" aria-label="TikTok"><img src="icons/tiktok.webp" alt=""></a>
+          <a href="https://www.youtube.com/@MYRefrigeraci%C3%B3n" aria-label="YouTube"><img src="icons/youtube.webp" alt=""></a>
+        </div>
+      </div>
+      <div>
+        <h3>Servicios</h3>
+        <ul>
+          <li>Heladeras y freezers</li>
+          <li>Aire acondicionado</li>
+          <li>Cámaras y comercios</li>
+          <li>Mantenimiento integral</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contacto</h3>
+        <ul>
+          <li><a href="tel:+543815862899">381 586-2899</a></li>
+          <li><a href="https://wa.me/543815862899" rel="noopener noreferrer">WhatsApp</a></li>
+          <li><a href="mailto:myrefrigeracion2025@gmail.com">myrefrigeracion2025@gmail.com</a></li>
+          <li>Maipú 974, San Miguel de Tucumán</li>
+        </ul>
+      </div>
+      <div>
         <h3>Enlaces</h3>
         <ul>
-          <li><a href="index.html">Inicio</a></li>
           <li><a href="nosotros.html">Nosotros</a></li>
           <li><a href="galeria.html">Galería</a></li>
           <li><a href="groupmy.html">Group MY</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-          <li><a href="politica-privacidad.html">Política de Privacidad</a></li>
-          <li><a href="terminos-condiciones.html">Términos y Condiciones</a></li>
+          <li><a href="politica-privacidad.html">Política de privacidad</a></li>
         </ul>
       </div>
-
-      <div class="footer-column">
-        <h3>Horarios</h3>
-        <p>Lunes a Viernes: 8:00 - 18:00</p>
-        <p>Sábado: Cerrado</p>
-        <p>Domingo: Cerrado</p>
-        <p class="turnos-previos">⚠️ Solo con turnos previos</p>
-      </div>
-
-      <div class="footer-column">
-        <h3>Redes Sociales</h3>
-        <div class="social-links" style="background: transparent;">
-          <a href="https://www.facebook.com/profile.php?id=61570983437330" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-            <img src="icons/facebook.webp" alt="Facebook" class="social-icon" loading="lazy">
-          </a>
-          <a href="https://www.instagram.com/refrigeracionmy" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-            <img src="icons/instagram.webp" alt="Instagram" class="social-icon" loading="lazy">
-          </a>
-          <a href="https://www.tiktok.com/@myrefrigeracion" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
-            <img src="icons/tiktok.webp" alt="TikTok" class="social-icon" loading="lazy">
-          </a>
-          <a href="https://x.com/MYRefrigeracion" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
-            <img src="icons/twitter.webp" alt="X" class="social-icon" loading="lazy">
-          </a>
-          <a href="https://www.youtube.com/@MYRefrigeraci%C3%B3n" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
-            <img src="icons/youtube.webp" alt="YouTube" class="social-icon" loading="lazy">
-          </a>
-          <a href="https://wa.me/543815862899" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
-            <img src="icons/whatsapp.webp" alt="WhatsApp" class="social-icon" loading="lazy">
-          </a>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; <span data-year></span> MY Refrigeración. Todos los derechos reservados.</p>
+        <div class="footer-legal-links">
+          <a href="politica-privacidad.html">Privacidad</a>
+          <a href="terminos-condiciones.html">Términos</a>
         </div>
       </div>
     </div>
-
-    <!-- Copyright -->
-    <div class="copyright">
-      <div class="container">
-        <p>&copy; 2025 MY Refrigeración. Todos los derechos reservados.</p>
-        <p>¿Te gustó esta página? <a href="desarrollo-web.html">Desarrollo Web</a></p>
-      </div>
-    </div>
   </footer>
-
-  <!-- WhatsApp flotante -->
-  <div class="whatsapp-float">
-    <a href="https://wa.me/543815862899" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
-      <img src="icons/whatsapp.webp" alt="WhatsApp" loading="lazy">
-    </a>
-  </div>
-
-
-  <script src="js/main.js"></script>
+  <a class="whatsapp-float" href="https://wa.me/543815862899?text=Hola%20MY%20Refrigeraci%C3%B3n%2C%20quiero%20hacer%20una%20consulta" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+    <img src="icons/whatsapp.webp" alt="WhatsApp" width="36" height="36">
+  </a>
 </body>
 </html>

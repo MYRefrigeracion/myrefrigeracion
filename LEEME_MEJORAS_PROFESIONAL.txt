@@ -1,0 +1,22 @@
+MY Refrigeración - Rediseño profesional 30/04/2026
+
+Cambios realizados:
+1. Se reemplazó la página principal index.html por una landing más profesional, clara y moderna.
+2. Se agregaron botones directos de WhatsApp y llamada telefónica para mejorar la conversión de clientes.
+3. Se reorganizó el contenido en bloques: presentación, servicios, método de trabajo, Group MY, clientes, app y contacto.
+4. Se creó una nueva hoja de estilos: css/pro-site.css.
+5. Se creó un nuevo script liviano: js/pro-site.js.
+6. Se mejoró la presentación móvil con menú adaptable y botones grandes.
+7. Se actualizó el SEO principal: título, descripción, Open Graph, Twitter Card y Schema.org.
+8. Se conservó una copia de la página anterior como index_original_antes_redisenio.html.
+9. Se agregó la nueva hoja de estilos y script a las páginas principales para mejorar compatibilidad visual.
+
+Archivos principales modificados/agregados:
+- index.html
+- css/pro-site.css
+- js/pro-site.js
+- index_original_antes_redisenio.html
+- LEEME_MEJORAS_PROFESIONAL.txt
+
+No se borraron imágenes, videos, APK ni secciones importantes del sitio original.
+Para publicar, subir el contenido completo de esta carpeta al hosting o repositorio actual.

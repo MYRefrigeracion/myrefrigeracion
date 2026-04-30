@@ -1,0 +1,18 @@
+MEJORAS APLICADAS - ESTILO UNIFICADO MY REFRIGERACIÓN
+
+Se revisó el sitio completo, no solo el index.
+
+Cambios principales:
+- Se unificó el encabezado, menú, pie de página, botón de WhatsApp y paleta visual en todas las páginas HTML principales.
+- Se aplicó el mismo diseño profesional a: index, nosotros, información, galería, Group MY, contacto, app, privacidad, términos, 404, desarrollo web y páginas del blog.
+- Se corrigió el index que tenía pie de página duplicado.
+- Se limpió la mezcla de estilos anteriores para evitar que cada página se vea diferente.
+- Se mejoró la navegación móvil con menú responsive.
+- Se revisó el formulario de contacto para que no borre los datos antes de enviarlos.
+- Se actualizó el service worker para reducir problemas de caché y versiones viejas.
+- Se mantuvieron imágenes, APK, íconos y archivos del sitio.
+
+Para subir:
+1) Descomprimir el ZIP.
+2) Subir/reemplazar todos los archivos del sitio.
+3) En el navegador, hacer Ctrl+F5 o borrar caché si se ve una versión vieja.
