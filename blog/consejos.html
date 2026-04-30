@@ -1,262 +1,113 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-AR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <meta name="description" content="Consejos para mantener tus electrodomésticos en el clima de Tucumán. Tips para heladeras, freezers y aire acondicionado en la región." />
-  <meta name="keywords" content="consejos mantenimiento electrodomésticos Tucumán, cuidado heladeras Tucumán, aire acondicionado en verano Tucumán, mantenimiento preventivo Tucumán" />
-  <title>Consejos para Mantener tus Electrodomésticos en Tucumán - MY Refrigeración</title>
-  <link rel="stylesheet" href="/myrefrigeracion/css/styles.css">
-  <link rel="stylesheet" href="/myrefrigeracion/css/blog.css">
-  <link rel="stylesheet" href="/myrefrigeracion/css/notificacion.css">
-  <style>
-    /* Variables de color */
-    :root {
-      --primary-color: #2196F3;
-      --primary-dark: #1976D2;
-      --text-color: #333;
-      --background-color: #f8f9fa;
-    }
-
-    /* Estilos específicos del blog */
-    .volver-inicio {
-      position: fixed;
-      top: 20px;
-      left: 20px;
-      z-index: 1000;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-
-
-    .btn-volver {
-      display: inline-flex;
-      align-items: center;
-      padding: 10px 20px;
-      background-color: var(--primary-color);
-      color: white;
-      text-decoration: none;
-      border-radius: 4px;
-      transition: all 0.3s ease;
-      font-weight: 500;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-
-    .btn-volver:hover {
-      background-color: var(--primary-dark);
-      transform: translateY(-2px);
-      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-    }
-
-    .btn-volver::before {
-      content: "← ";
-      font-size: 0.9em;
-    }
-
-    .blog-post {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-
-    .blog-post h1 {
-      color: var(--primary-color);
-      text-align: center;
-      margin-bottom: 30px;
-    }
-
-    .blog-post article {
-      background: white;
-      padding: 30px;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-
-    .blog-post section {
-      margin-bottom: 40px;
-    }
-
-    .blog-post h2 {
-      color: var(--primary-dark);
-      margin-bottom: 20px;
-    }
-
-    .blog-post ul {
-      list-style-type: disc;
-      margin-left: 20px;
-    }
-
-    .blog-post li {
-      margin-bottom: 10px;
-    }
-
-    .blog-post p {
-      line-height: 1.6;
-      margin-bottom: 15px;
-    }
-
-    /* Estilo para el formulario de contacto */
-    .contacto {
-      max-width: 600px;
-      margin: 40px auto;
-      padding: 20px;
-      background: var(--background-light);
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-
-    .contacto h3 {
-      color: var(--primary-dark);
-      margin-bottom: 20px;
-      text-align: center;
-    }
-
-    .contacto input,
-    .contacto textarea {
-      width: 100%;
-      padding: 10px;
-      margin: 10px 0;
-      border: 1px solid #ddd;
-      border-radius: 4px;
-      box-sizing: border-box;
-    }
-
-    .contacto button {
-      width: 100%;
-      padding: 12px;
-      background: var(--primary-color);
-      color: white;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-      font-size: 16px;
-      transition: background-color 0.3s ease;
-    }
-
-    .contacto button:hover {
-      background: var(--primary-dark);
-    }
-
-    /* Estilo para los comentarios de Google */
-    #g-comments {
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 20px;
-      background: white;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Consejos de mantenimiento | MY Refrigeración</title>
+  <meta name="description" content="Consejos para mantener heladeras, freezers y aire acondicionado en Tucumán.">
+  <meta name="author" content="MY Refrigeración">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0b4f8a">
+  <link rel="icon" type="image/x-icon" href="../favicon.ico">
+  <link rel="manifest" href="../manifest.json">
+  <link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+  <meta property="og:title" content="Consejos de mantenimiento | MY Refrigeración">
+  <meta property="og:description" content="Consejos para mantener heladeras, freezers y aire acondicionado en Tucumán.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://www.myrefrigeracion.com.ar/images/logo.png">
+  <meta property="og:locale" content="es_AR">
+  <link rel="stylesheet" href="../css/pro-site.css?v=20260430b">
+  
+  <script src="../js/pro-site.js?v=20260430b" defer></script>
 </head>
-  <body>
-    <!-- Script de Google -->
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
-    <script>
-      window.___gcfg = {
-        lang: 'es-419',
-        parsetags: 'onload'
-      };
-    </script>
+<body class="pro-page blog-page">
 
-    <!-- Botón de volver al inicio -->
-    <div class="volver-inicio">
-      <a href="https://www.myrefrigeracion.com.ar/" class="btn-volver">Volver al inicio</a>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="site-header" data-site-header>
+    <div class="topbar">
+      <div class="container topbar__content">
+        <span>Atención con turnos previos · Tucumán</span>
+        <a href="tel:+543815862899">Llamar: 381 586-2899</a>
+      </div>
     </div>
-
-    <main class="blog-post">
-      <h1>Consejos para Mantener tus Electrodomésticos en el Clima de Tucumán</h1>
-      
-      <article>
-        <section>
-          <h2>1. Mantenimiento de Heladeras en el Calor de Tucumán</h2>
-          <p>En Tucumán, el clima cálido puede afectar el rendimiento de tu heladera. Aquí tienes algunos consejos:</p>
-          <ul>
-            <li>Mantén la temperatura entre 2°C y 4°C</li>
-            <li>Evita abrir la puerta constantemente</li>
-            <li>Limpia los filtros de aire regularmente</li>
-          </ul>
-        </section>
-
-        <section>
-          <h2>2. Aire Acondicionado en Verano</h2>
-          <p>Con el calor intenso de Tucumán, tu aire acondicionado debe estar en perfectas condiciones:</p>
-          <ul>
-            <li>Realiza mantenimiento preventivo antes del verano</li>
-            <li>Verifica los filtros cada 30 días</li>
-            <li>Configura la temperatura entre 22°C y 24°C</li>
-          </ul>
-        </section>
-
-        <section>
-          <h2>3. Freezers y el Clima Tropical</h2>
-          <p>Los freezers requieren cuidados especiales en el clima tropical de Tucumán:</p>
-          <ul>
-            <li>Descongela regularmente</li>
-            <li>Mantén la temperatura por debajo de -18°C</li>
-            <li>Verifica el sellado de las puertas</li>
-          </ul>
-        </section>
-
-        <section>
-          <h2>Contacto</h2>
-          <p>¿Necesitas ayuda con el mantenimiento de tus electrodomésticos? Contacta a MY Refrigeración:</p>
-          <ul>
-            <li>Teléfono: +54 381 5862899</li>
-            <li>Dirección: Maipú 974, Tucumán</li>
-          </ul>
-        </section>
-      </article>
-    </main>
-
-  <!-- Comentarios de Google -->
-  <div class="g-comments" id="comments-container">
-    <div class="g-comments"
-      data-href="https://www.myrefrigeracion.com.ar/blog/consejos.html"
-      data-width="100%"
-      data-first_party_property="BLOGGER"
-      data-view_type="FILTERED_POSTMOD">
+    <div class="container navbar">
+      <a class="brand" href="../index.html" aria-label="MY Refrigeración - Inicio">
+        <img src="../images/logo.png" alt="MY Refrigeración" width="92" height="92">
+        <span>
+          <strong>MY Refrigeración</strong>
+          <small>Refrigeración eficiente, confort garantizado</small>
+        </span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" data-nav-toggle>
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" aria-label="Navegación principal" data-site-nav>
+        <a href="../index.html">Inicio</a> <a href="../nosotros.html">Nosotros</a> <a href="../informacion.html">Información</a> <a href="../galeria.html">Galería</a> <a href="../groupmy.html">Group MY</a> <a href="../instalar-app.html">App</a> <a class="nav-cta" href="../contacto.html">Contacto</a>
+      </nav>
     </div>
-  </div>
-  <!-- Formulario de contacto -->
-  <div class="contacto">
-    <h3>Dejanos tu consulta</h3>
-    <div class="comentarios-container"></div>
-    <form>
-      <input type="hidden" name="csrf_token" value="{{ csrf_token }}">
-      <div class="form-group">
-        <input type="text" name="nombre" placeholder="Tu nombre" required autocomplete="off">
-      </div>
-      <div class="form-group">
-        <input type="email" name="email" placeholder="Tu email" required autocomplete="off">
-      </div>
-      <div class="form-group">
-        <textarea name="mensaje" placeholder="Tu mensaje" required></textarea>
-      </div>
-      <button type="submit" class="btn-enviar">Enviar</button>
-    </form>
-  </div>
+  </header>
+  <main id="contenido">
 
-  <!-- Notificación -->
-  <div class="notificacion"></div>
+    <section class="page-hero"><div class="container"><p class="eyebrow">Consejos</p><h1>Cómo cuidar tus equipos en el clima de Tucumán</h1><p>Recomendaciones prácticas para heladeras, freezers y aire acondicionado.</p></div></section>
+    <section class="section section-soft"><div class="container blog-article"><article class="pro-card"><h2>Heladeras y freezers</h2><p>En días de mucho calor, evitá abrir la puerta constantemente y revisá que los burletes cierren bien. Un mal sellado obliga al motor a trabajar de más.</p><ul><li>Mantené ventilada la parte trasera del equipo.</li><li>No cargues alimentos calientes.</li><li>Consultá si hay ruidos, hielo excesivo o pérdida de frío.</li></ul><h2>Aire acondicionado</h2><p>Una limpieza preventiva mejora el rendimiento y puede reducir consumo. Los filtros sucios hacen que el equipo enfríe menos y trabaje forzado.</p><ul><li>Limpieza de filtros cada 30 días en temporada alta.</li><li>Revisión antes del verano.</li><li>Temperatura recomendada: uso responsable entre 22 °C y 24 °C.</li></ul><h2>Cuándo llamar a un técnico</h2><p>Si el equipo gotea, hace ruido, tarda en enfriar, corta de golpe o consume más de lo normal, conviene revisarlo antes de que la falla sea mayor.</p><div class="notice">Para pedir asesoramiento, escribí por WhatsApp e indicá marca, tipo de equipo, falla y zona.</div><div class="button-row"><a class="btn btn-primary" href="../contacto.html">Consultar servicio</a><a class="btn btn-secondary" href="../index.html">Volver al inicio</a></div></article></div></section>
+  </main>
 
-  <!-- Scripts -->
-  <script src="https://apis.google.com/js/platform.js" async defer></script>
-  <script src="/myrefrigeracion/js/contacto.js"></script>
-  <script>
-    window.___gcfg = {
-      lang: 'es-419',
-      parsetags: 'explicit'
-    };
-  </script>
-
-  <script src="https://apis.google.com/js/platform.js" async defer></script>
-  <script>
-    window.___gcfg = {
-      lang: 'es-419',
-      parsetags: 'explicit'
-    };
-  </script>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="footer-brand" href="../index.html">
+          <img src="../images/logo.png" alt="MY Refrigeración" width="70" height="70">
+          <span>MY Refrigeración</span>
+        </a>
+        <p>Servicio técnico especializado e integral en Tucumán. Atención con turnos previos, diagnóstico claro y garantía.</p>
+        <div class="footer-social" aria-label="Redes sociales">
+          <a href="https://www.instagram.com/refrigeracionmy" aria-label="Instagram"><img src="../icons/instagram.webp" alt=""></a>
+          <a href="https://www.facebook.com/profile.php?id=61570983437330" aria-label="Facebook"><img src="../icons/facebook.webp" alt=""></a>
+          <a href="https://www.tiktok.com/@myrefrigeracion" aria-label="TikTok"><img src="../icons/tiktok.webp" alt=""></a>
+          <a href="https://www.youtube.com/@MYRefrigeraci%C3%B3n" aria-label="YouTube"><img src="../icons/youtube.webp" alt=""></a>
+        </div>
+      </div>
+      <div>
+        <h3>Servicios</h3>
+        <ul>
+          <li>Heladeras y freezers</li>
+          <li>Aire acondicionado</li>
+          <li>Cámaras y comercios</li>
+          <li>Mantenimiento integral</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contacto</h3>
+        <ul>
+          <li><a href="tel:+543815862899">381 586-2899</a></li>
+          <li><a href="https://wa.me/543815862899" rel="noopener noreferrer">WhatsApp</a></li>
+          <li><a href="mailto:myrefrigeracion2025@gmail.com">myrefrigeracion2025@gmail.com</a></li>
+          <li>Maipú 974, San Miguel de Tucumán</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Enlaces</h3>
+        <ul>
+          <li><a href="../nosotros.html">Nosotros</a></li>
+          <li><a href="../galeria.html">Galería</a></li>
+          <li><a href="../groupmy.html">Group MY</a></li>
+          <li><a href="../politica-privacidad.html">Política de privacidad</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; <span data-year></span> MY Refrigeración. Todos los derechos reservados.</p>
+        <div class="footer-legal-links">
+          <a href="../politica-privacidad.html">Privacidad</a>
+          <a href="../terminos-condiciones.html">Términos</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <a class="whatsapp-float" href="https://wa.me/543815862899?text=Hola%20MY%20Refrigeraci%C3%B3n%2C%20quiero%20hacer%20una%20consulta" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+    <img src="../icons/whatsapp.webp" alt="WhatsApp" width="36" height="36">
+  </a>
 </body>
 </html>
